@@ -1,0 +1,91 @@
+// DUMMY BACKGROUND IMAGE FOR ALIGNMENT
+/*
+body {
+  background-image: url(/assets/images/misc/bg.png);
+}
+*/
+
+/**
+ * Site header
+ */
+.site-header {
+  // border-bottom: 1px solid $grey-color-light;
+
+  .site-title-section {
+    border-bottom: 1px solid $grey-color;//red;//#adadad;
+  }
+}
+
+.site-title {
+  font-size: 23px;
+  font-weight: 300;
+  // line-height: 56px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 112px;
+  margin-bottom: 60px;
+  float: left;
+
+  &,
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  clear: both;
+  padding-top: 14px;
+  padding-left: 34px;
+  padding-bottom: 59px;
+  border-bottom: 1px solid $grey-color-light;
+
+  @include media-query($on-laptop) {
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+
+  font-size: 11px ;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  .page-link {
+    line-height: 2.8em;
+    color: $text-color;
+    display: inline-block;
+    margin-right: 49px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom-color: $grey-color;
+      text-decoration: none;
+    }
+  }
+}
+
+/**
+ * Footer
+ */
+.site-footer {
+  padding-bottom: $spacing-unit * 2;
+}
+
+/**
+ * Page content
+ */
+.page-content {
+  margin-top: 70px;
+}
+
+.page-heading {
+  font-size: $base-font-size;
+  margin-bottom: $spacing-unit;
+}
+
+.home {
+  max-width: 348px;
+}
