@@ -22,3 +22,6 @@ gem "jekyll", "3.3.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
 end
+
+# Github pages Gem
+gem 'github-pages', '104', group: :jekyll_plugins
