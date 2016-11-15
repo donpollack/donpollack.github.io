@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="galleria/galleria-1.2.6.min.js"></script>
+	</head>
+	<body>
+        <script>
+    		if (Galleria) { $("body").text('Galleria works') }
+		</script>
+		<div id="gallery">
+    		<img src="img/painting/mysterious_project.png">
+    		<img src="img/painting/night_project.png">
+		</div>
+		<script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            $("#gallery").galleria({
+                width: 500,
+                height: 500
+            });
+        </script>
+    </body>
+<html>

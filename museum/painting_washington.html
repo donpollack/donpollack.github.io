@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+      $(".slide").hide();
+      $(".slide#s1").show();
+      $(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+});
+$(document).ready(function(){
+  $("[href='JavaScript:void()']").click(function(){
+    $(".slide").hide();
+    $(".box").css({"color":"#666","background":"none"});
+    $(".box:hover").css({"color":"#ffffff","background":"#444444"});
+  });
+  $("a#b1").click(function(){
+    $(".slide#s1").show();
+    $(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+  });	
+  $("a#b2").click(function(){
+    $(".slide#s2").show();
+    $(".box#b2").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b3").click(function(){
+    $(".slide#s3").show();
+    $(".box#b3").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b4").click(function(){
+    $(".slide#s4").show();
+    $(".box#b4").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b5").click(function(){
+    $(".slide#s5").show();
+    $(".box#b5").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b6").click(function(){
+    $(".slide#s6").show();
+    $(".box#b6").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b7").click(function(){
+    $(".slide#s7").show();
+    $(".box#b7").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b8").click(function(){
+    $(".slide#s8").show();
+    $(".box#b8").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b9").click(function(){
+    $(".slide#s9").show();
+    $(".box#b9").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b10").click(function(){
+    $(".slide#s10").show();
+    $(".box#b10").css({"color":"#ffffff","background-color":"#444444"});
+  });
+   $("a#b11").click(function(){
+    $(".slide#s11").show();
+    $(".box#b11").css({"color":"#ffffff","background-color":"#444444"});
+  });
+   $("a#b12").click(function(){
+    $(".slide#s12").show();
+    $(".box#b12").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b13").click(function(){
+    $(".slide#s13").show();
+    $(".box#b13").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b14").click(function(){
+    $(".slide#s14").show();
+    $(".box#b14").css({"color":"#ffffff","background-color":"#444444"});
+  });
+   $("a#b15").click(function(){
+    $(".slide#s15").show();
+    $(".box#b15").css({"color":"#ffffff","background-color":"#444444"});
+  });
+   $("a#b16").click(function(){
+    $(".slide#s16").show();
+    $(".box#b16").css({"color":"#ffffff","background-color":"#444444"});
+  });
+   $("a#b17").click(function(){
+    $(".slide#s17").show();
+    $(".box#b17").css({"color":"#ffffff","background-color":"#444444"});
+  });
+});
+/*$(document).ready(function(){
+	var b = $(".slide").length;	
+	var box = function() {
+		return "<a href='JavaScript:void()' id='b" + i + "' class='box'>" + i + "</a>";
+	};
+	var makeBox = function() {
+		$(".buttons").append(box());	
+	};
+	var makeBoxes = function() {
+		for (i=1; i<=b; i++) {
+		makeBox();
+		};
+	};
+
+	$(".slide").css({"display":"none"});
+	$(".slide#s1").css({"display":"inline"});
+	$(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+
+  $("[href='JavaScript:void()']").click(function(){
+    $(".slide").css({"display":"none"});
+    $(".box").css({"color":"#666","background":"none"});
+    $(".box:hover").css({"color":"#ffffff","background":"#444444"});
+  });
+  $("a#b1").click(function(){
+    $(".slide#s1").css({"display":"inline"});
+    $(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+  });	
+  $("a#b2").click(function(){
+    $(".slide#s2").css({"display":"inline"});
+    $(".box#b2").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b3").click(function(){
+    $(".slide#s3").css({"display":"inline"});
+    $(".box#b3").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b4").click(function(){
+    $(".slide#s4").css({"display":"inline"});
+    $(".box#b4").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b5").click(function(){
+    $(".slide#s5").css({"display":"inline"});
+    $(".box#b5").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b6").click(function(){
+    $(".slide#s6").css({"display":"inline"});
+    $(".box#b6").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b7").click(function(){
+    $(".slide#s7").css({"display":"inline"});
+    $(".box#b7").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b8").click(function(){
+    $(".slide#s8").css({"display":"inline"});
+    $(".box#b8").css({"color":"#ffffff","background-color":"#444444"});
+  });
+});*/
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+body
+	{
+	background-image: url('images/banner_painting_small.png');
+	background-repeat: no-repeat;
+	}
+	
+
+</style>
+<title>Don Pollack</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="don">
+			<a class="header" href="index.html">don pollack</a>
+		</div>
+		<div id="banner">
+			<div id="bannertext">taking measure of history</div>
+		</div>
+		<div id="nav">
+			<div id="painting">
+				<a class="header" id="current" href="painting.html">painting</a>
+			</div>
+			<div id="museum">
+				<a class="header" href="museum.html">museum in trust</a>
+			</div>
+			<div id="crossing">
+			<a class="header" href="http://www.crossingthegreatdivide.net/">Crossing The Great Divide</a>
+			</div>
+			<div id="cbv">
+				<a class="header" href="contact.html">contact</a> <a class="header" href="http://donpollack.blogspot.com/" target="_blank">blog</a> <a class="header" href="documents/don_pollack_vita.pdf" target="_blank">vita</a>
+			</div>
+		</div>
+		<div id="numbers">
+			<img src="images/numbers.png" height="498" width="26" alt=" " />
+		</div>
+		<div id="subhead">
+			TAKING MEASURE ACROSS THE LANDSCAPE: <span style="margin-left: 7px;">34 DAYS, 2046 MILES BY BICYCLE</span>
+		</div>
+	</div>
+	
+	<div id="container">
+		<div class="projectinfo">
+			<img src="images/painting/wash_2.png" width="40" height="40" style="position: absolute; top: -30px; left: 175px;" />
+			<div class="grotesqueheading">
+				34 DAYS TO WASHINGTON <span style="margin-left: 27px; color: gray; text-transform: lowercase;">in process</span>
+			</div>
+			<p class="grotesque">
+				
+				<img src="images/painting/wash_1.jpg" width="92" height="62" style="margin-top: 2px; border-style: solid; border-width: 1px; border-color: gray;" />
+				
+				<img src="images/painting/bike_loop.gif" height="62" alt="" style="margin-left: 80px;" />
+			</p>
+		</div>
+		<div class="buttons">
+			<a href="JavaScript:void()" class="box" id="b1">1</a>
+			<a href="JavaScript:void()" class="box" id="b2">2</a>
+			<a href="JavaScript:void()" class="box" id="b3">3</a>
+			<a href="JavaScript:void()" class="box" id="b4">4</a>
+			<a href="JavaScript:void()" class="box" id="b5">5</a>
+			<a href="JavaScript:void()" class="box" id="b6">6</a>
+			<a href="JavaScript:void()" class="box" id="b7">7</a>
+			<a href="JavaScript:void()" class="box" id="b8">8</a>
+			<a href="JavaScript:void()" class="box" id="b9">9</a>
+			<a href="JavaScript:void()" class="box" id="b10">10</a>
+			<a href="JavaScript:void()" class="box" id="b11">11</a>
+			<a href="JavaScript:void()" class="box" id="b12">12</a>
+			<a href="JavaScript:void()" class="box" id="b13">13</a>
+			<a href="JavaScript:void()" class="box" id="b14">14</a>
+			<a href="JavaScript:void()" class="box" id="b15">15</a>
+			<a href="JavaScript:void()" class="box" id="b16">16</a>
+			<a href="JavaScript:void()" class="box" id="b17">17</a>
+		</div>
+		<div class="supplement">
+			<div class="supimg">
+				<div class="sup">
+					<a href="images/painting/washington/catalog.pdf" target="_blank"><img src="images/painting/washington/catalog_cover.png" alt="" /></a>
+				</div>
+				<div class="sup">
+					<a href="painting_washington_maps.html"><img src="images/painting/washington/maps_cover.png" alt="" /></a>
+				</div>
+			</div>
+			<div class="suplink">
+				<div class="sup">
+					<a href="images/painting/washington/catalog.pdf" class="links" target="_blank">view online catalog</a>
+				</div>
+				<div class="sup">
+					<a href="painting_washington_maps.html" class="links">view route maps</a>
+				</div>
+			</div>
+			<div class="supimg">
+				<div class="sup">
+					<a href="painting_washington_photos.html"><img src="images/painting/washington/photos_cover.png" alt="" /></a>
+				</div>
+				<div class="sup">
+					<a href="painting_washington_video.html"><img src="images/painting/washington/video_cover.png" alt="" /></a>
+				</div>
+			</div>
+			<div class="suplink">
+				<div class="sup">
+					<a href="painting_washington_photos.html" class="links">view photos <br />and equipment</a>
+				</div>
+				<div class="sup">
+					<a href="painting_washington_video.html" class="links">view video</a>
+				</div>
+			</div>
+		</div>
+		<div id="slides">
+			<div class="slide" id="s1">
+				<div class="left">
+					<a href="JavaScript:void()" id="b2">
+						<img src="images/painting/washington/washington_1-1.png" alt="img" />
+						<img src="images/painting/washington/washington_1-2.png" alt="img" style="margin-top: 60px;" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_1-4.png" alt="img" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua">
+							<span style="position: relative; top: -20px; font-size: 8px;">detail</span>
+							<p>
+								above: Olana, (view of the Hudson River from Fraderic Church's Olana) <br />11.5" x 72", oil on panel, 2012
+							</p>
+							<img src="images/painting/washington/washington_1-3.png" alt="img" style="margin: 19px 0; border-style: solid; border-width: 1px; border-color: gray;" />
+							<span style="position: relative; top: -22px; left: 5px; font-size: 8px;">Hudson, New York</span>
+						</div>		
+					</div>		
+				</div>
+			</div>
+			
+			<div class="slide" id="s2">
+				<div class="left">
+					<a href="JavaScript:void()" id="b3">
+					<img src="images/painting/washington/washington_2-1.png" alt="img" />
+					<img src="images/painting/washington/washington_2-2.png" alt="img" style="margin-top: 60px;" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_2-4.png" alt="img" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua">
+							<span style="position: relative; top: -20px; font-size: 8px;">detail</span>
+							<p>
+								above: Great Lake, (view from Ashtabula, Ohio, site of the escape route to Canada on the Underground Railrroad) <br />11.5" x 72", oil on panel, 2012
+							</p>
+							<img src="images/painting/washington/washington_2-3.png" alt="img" style="margin: 20px 0; border-style: solid; border-width: 1px; border-color: gray;" />
+							<span style="position: relative; top: -22px; left: 5px; font-size: 8px;">Ashtabula, Ohio</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s3">
+				<div class="left">
+					<a href="JavaScript:void()" id="b4">
+					<img src="images/painting/washington/washington_11-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+					</div>
+					<!--
+					<div class="projectinfo2">
+						<div class="perpetua">
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="slide" id="s4">
+				<div class="left">
+					<a href="JavaScript:void()" id="b5">
+					<img src="images/painting/washington/washington_12-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+					</div>
+					<!--
+					<div class="projectinfo2">
+						<div class="perpetua">
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+			
+			<div class="slide" id="s5">
+				<div class="left">
+					<a href="JavaScript:void()" id="b6">
+						<img src="images/painting/washington/washington_3-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_3-3.png" alt="img" style="position: relative; top: -60px;" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua" style="margin: 20px 0 40px 0;">
+							<p>
+								Illinois, section 1, <br />6" x 18" oil on panel, 2011
+							</p>
+							<img src="images/painting/washington/washington_3-2.png" alt="img" style="margin: 20px 0; border-style: solid; border-width: 1px; border-color: gray;" />
+							<span style="position: relative; top: -22px; left: 5px; font-size: 8px;">Monticello, Illinois</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s6">
+				<div class="left">
+					<a href="JavaScript:void()" id="b7">
+						<img src="images/painting/washington/washington_4-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_4-3.png" alt="img" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua" style="margin: 20px 0 40px 0;">
+							<p>
+								Indiana, section 4 <br />oil on panel, 2012
+							</p>
+							<img src="images/painting/washington/washington_4-2.png" alt="img" style="margin: 20px 0; border-style: solid; border-width: 1px; border-color: gray;" />
+							<span style="position: relative; top: -22px; left: 5px; font-size: 8px;">Indiana</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s7">
+				<div class="left">
+					<a href="JavaScript:void()" id="b8">
+						<img src="images/painting/washington/washington_5-1.png" alt="img" />
+						<img src="images/painting/washington/washington_5-2.png" alt="img" style="margin-top: 60px;" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_5-4.png" alt="img" style="position: relative; top: -20px;" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua" style="margin: 20px 0 40px 0;">
+							<p>
+								New Jersey, section 26 <br />oil on panel, 2011
+							</p>
+							<img src="images/painting/washington/washington_5-3.png" alt="img" style="margin: 20px 0; border-style: solid; border-width: 1px; border-color: gray;" />
+							<span style="position: relative; top: -22px; left: 5px; font-size: 8px;">Milford, New Jersey</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s8">
+				<div class="left">
+					<a href="JavaScript:void()" id="b9">
+						<img src="images/painting/washington/washington_6-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_7_small.png" alt="img" style="position: relative; top: -80px;" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua" style="margin: 20px 0 40px 0;">
+							<p>
+								Meta Gear <br />North Face Mica 1 Tent, books, painting, 2012
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s9">
+				<div class="left">
+					<a href="JavaScript:void()" id="b10">
+						<img src="images/painting/washington/washington_7.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_6-2.png" alt="img" style="position: relative; top: -80px;" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua" style="margin: 20px 0 40px 0;">
+							<p>
+								"The Circuit", installation<br />
+								19th century Beaver Felt Hat,<br />
+								spurs, Bicycle helmet, pedals<br />
+								text and map
+							</p>
+							<img src="images/painting/washington/washington_7_detail.png" alt="" />
+							<p>
+								Riding through central Illinois along <br />
+								the routes that paralleled the Illinois <br />
+								8th Judicial Circuit that was ridden by <br />
+								country lawyers on horseback over 150 <br />
+								years ago. Lincoln did this 400 mile <br />
+								route twice a year.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s10">
+				<div class="left">
+					<a href="JavaScript:void()" id="b11">
+						<img src="images/painting/washington/washington_7-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_7-2.png" alt="img" style="position: relative; top: -20px;" />
+					</div>
+					<div class="projectinfo2">
+						<div class="perpetua" style="margin: 20px 0 40px 0;">
+							<p>
+								Blueprint Cyanotype on 140lb rag paper <br />24" x 36", 2012
+							</p>
+							<p>
+								This map series encompasses Illinois, Indiana, Pennsylvania, New York, New
+								Jersey, and Maryland and highlights the route taken for the project. The circles
+								indicate daily stops on the 34 day 2046 mile trip from Springfield, Illinois to Washington
+								D.C. and the text is the day to day log book entry. (The front door of
+								Abraham Lincoln’s home to the White House.)
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide" id="s11">
+				<div class="left">
+					<a href="JavaScript:void()" id="b12">
+						<img src="images/painting/washington/washington_8-1.png" alt="img" />
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="slide" id="s12">
+				<div class="left">
+					<a href="JavaScript:void()" id="b13">
+						<img src="images/painting/washington/washington_10-2.png" alt="img" />
+						<img src="images/painting/washington/washington_10-1.png" alt="img" style="position: absolute; left: 250px;" />
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="slide" id="s13">
+				<div class="left">
+					<a href="JavaScript:void()" id="b14">
+						<img src="images/painting/washington/map_1.png" alt="img" />
+						
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="slide" id="s14">
+				<div class="left">
+					<a href="JavaScript:void()" id="b15">
+						<img src="images/painting/washington/map_2.png" alt="img" />
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="slide" id="s15">
+				<div class="left">
+					<a href="JavaScript:void()" id="b16">
+						<img src="images/painting/washington/map_3.png" alt="img" />
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="slide" id="s16">
+				<div class="left">
+					<a href="JavaScript:void()" id="b17">
+						<img src="images/painting/washington/map_4.png" alt="img" />
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="slide" id="s17">
+				<div class="left">
+					<a href="JavaScript:void()" id="b1">
+						<img src="images/painting/washington/washington_13-1.png" alt="img" />
+					</a>
+					
+				</div>
+			</div>
+			
+			<!--<div class="slide" id="s11">
+				<div class="left">
+					<a href="JavaScript:void()" id="b1">
+						<img src="images/painting/washington/washington_8-1.png" alt="img" />
+					</a>
+					<div class="thumbnail">
+						<img src="images/painting/washington/washington_7-2.png" alt="img" style="position: relative; top: -20px;" />
+					</div>
+				</div>
+			</div>-->
+		</div>
+			
+		<div class="projectinfo3">
+			<div class="grotesqueheading">
+				34 DAYS TO WASHINGTON
+			</div>
+			<div class="perpetua">
+				<p class="body">
+					"34 Days to Washington: Taking Measure Across the American Landscape" is a process art project involving bicycling 2034 miles from Springfield, Illinois to Washington D.C.following the meandering route that Abraham Lincoln road on his inaugural train to Washington D. C..
+				</p>
+				<p class="body">
+					This work will attempt to address the interelationships between movement through the landscape under human power and the contempletive low impact space it affords. During the time of travel, I reflected on the power of a cultural icon, well being in a civil society, contemporary aesthetics, and the individual process of conceptually mapping a landscape. By retracing the route Abraham Lincoln traveled from Springfield, Illinois to Washington D.C. after he was elected, it is my intent to explore the validity of Lincoln in a contemporary figure in civil society as well as the personal mythologies I see in American history.
+				</p>
+			</div>
+			<div class="links">
+				<a class="body" href="painting_washington_text.html">read full text</a>
+				</div>
+			<div class="perpetua" style="margin-top: 20px; padding-top: 15px; border-top-style: solid; border-width: 1px; border-color: #C0C0C0;">
+				This project is an extension of the Lincoln Project, a painting exhibition that appeared at the Abraham Lincoln Presidential Library and
+				Museum in Springfield, Illinois in February 2009 and the Union League Club in Chicago in July 2009. The research project was begun
+				in 2002 after meeting with Thomas Schwartz, the Illinois State Historian and viewing the Abraham Lincoln archives.<br />
+				<i>in 2010 - it was subtitled, "A Mile for Your Penny" and it also raised money by asking for a donation of a 'penny for a mile' to help fund Cancer research.</i>
+			</div>
+		</div>
+			
+	</div>
+</div>
+</body>
+</html>

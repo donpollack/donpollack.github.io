@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+/*var box=new Array(i); // regular array (add an optional integer
+box[0]="a#b1";       // argument to control array's size)
+box[1]="a#b2";
+box[2]="a#b3";
+box[3]="a#b4";
+box[4]="a#b5";
+box[5]="a#b6";
+
+
+
+$(document).ready(function() {
+    for (i=0,  ) {
+        // Make some jQuery call.
+    }
+});
+  $("a#b1").click(function(){
+    $(".slide#s1").show();
+    $(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+*/
+$(document).ready(function() {
+      $(".slide").hide();
+      $(".slide#s1").show();
+      $(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+});
+$(document).ready(function(){
+  $("[href='JavaScript:void()']").click(function(){
+    $(".slide").hide();
+    $(".box").css({"color":"#666","background":"none"});
+    $(".box:hover").css({"color":"#ffffff","background":"#444444"});
+  });
+  $("a#b1").click(function(){
+    $(".slide#s1").show();
+    $(".box#b1").css({"color":"#ffffff","background-color":"#444444"});
+  });	
+  $("a#b2").click(function(){
+    $(".slide#s2").show();
+    $(".box#b2").css({"color":"#ffffff","background-color":"#444444"});
+  });
+  $("a#b3").click(function(){
+    $(".slide#s3").show();
+    $(".box#b3").css({"color":"#ffffff","background-color":"#444444"});
+  });
+});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+body
+	{
+	background-image: url('images/banner_painting_small.png');
+	background-repeat: no-repeat;
+	}
+	
+
+</style>
+<title>Don Pollack</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="don">
+			<a class="header" href="index.html">don pollack</a>
+		</div>
+		<div id="banner">
+			<div id="bannertext">taking measure of history</div>
+		</div>
+		<div id="nav">
+			<div id="painting">
+				<a class="header" id="current" href="painting.html">painting</a>
+			</div>
+			<div id="museum">
+				<a class="header" href="museum.html">museum in trust</a>
+			</div>
+			<div id="crossing">
+			<a class="header" href="http://www.crossingthegreatdivide.net/">Crossing The Great Divide</a>
+			</div>
+			<div id="cbv">
+				<a class="header" href="contact.html">contact</a> <a class="header" href="http://donpollack.blogspot.com/" target="_blank">blog</a> <a class="header" href="documents/don_pollack_vita.pdf" target="_blank">vita</a>
+			</div>
+		</div>
+		<div id="numbers">
+			<img src="images/numbers.png" height="498" width="26" alt=" " />
+		</div>
+		<div id="subhead">
+			TAKING MEASURE ACROSS THE LANDSCAPE: <span style="margin-left: 7px;">34 DAYS, 2046 MILES BY BICYCLE</span>
+		</div>
+	</div>
+	
+	<div id="container">
+		
+	</div>
+</body>
+</html>

@@ -81,16 +81,28 @@ body {
   margin-top: 70px;
 }
 
-.page-heading {
-  font-size: $base-font-size;
+.page-heading, h1 {
   margin-bottom: $spacing-unit;
+  font-size: 11px ;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-.home {
+.home,
+.document {
   max-width: 348px;
+
+  img {
+    margin-bottom: $spacing-unit * 2;
+    border: 1px solid $grey-color-light;
+  }
 }
 
 .post-list {
   margin: 0;
   list-style-type: none;
+}
+
+article {
+  max-width: 448px;
 }
