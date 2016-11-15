@@ -15,4 +15,4 @@ Bernheim Residency Artists work within the forest and/or arboretum to create wor
 
 <img src="{{ site.baseurl }}/assets/images/misc/saic.png" alt="SAIC" width="100">
 
-## School of the Art Institute Faculty Enrichment Grant 2016
+## [School of the Art Institute Faculty Enrichment Grant 2016](http://www.saic.edu/faculty/residenciesandgrants/facultyenrichmentgrants/)
