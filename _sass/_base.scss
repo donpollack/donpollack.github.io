@@ -117,6 +117,18 @@ a {
 
 
 /**
+ * Rules
+ */
+hr {
+  height: 1px;
+  border: none;
+  border-bottom: 1px solid $grey-color-light;
+  margin: $spacing-unit 0;
+}
+
+
+
+/**
  * Blockquotes
  */
 blockquote {
