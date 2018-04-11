@@ -4,10 +4,40 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Recent Work</h1>
+  <h1 class="page-heading" style="margin-left: 2em;">Recent Work</h1>
 
   {{ content }}
 
+  <!-- update 04/11/2018 -->
+
+  {% assign image_files = site.static_files | where: "image", true %}
+  {% for myimage in image_files reversed %}
+    {% if myimage.path contains 'homepage2' %}
+      {% if myimage.path contains 'catalog' %}
+        {% if myimage.path contains 'this-land-is-not-empty' %}
+          <a href="/assets/documents/this-land-is-not-empty.pdf">
+            <img src="{{ myimage.path }}">
+          </a>
+        {% endif %}
+        {% if myimage.path contains 'true-life-novelettes' %}
+          <a href="/assets/documents/true-life-novelettes.pdf">
+            <img src="{{ myimage.path }}">
+          </a>
+        {% endif %}
+      {% else %}
+        {% if myimage.path contains 'bernheim' %}
+          <h1 class="page-heading">Carnegie Museum of Art & Science<br>New Albany, Indiana</h1>
+        {% endif %}
+        <a href="{{ myimage.path }}">
+          <img src="{{ myimage.path }}">
+        </a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- update 04/11/2018 -->
+
+  <!--
   <a href="/assets/documents/this-land-is-not-empty.pdf">
     <img src="/assets/images/homepage/catalog-cover.png">
   </a>
@@ -31,6 +61,7 @@ layout: default
   <a href="/assets/images/homepage/d.jpg">
     <img src="/assets/images/homepage/d.jpg">
   </a>
+  -->
 
   <!--
   <ul class="post-list">

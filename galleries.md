@@ -3,6 +3,8 @@ layout: page
 title: Galleries
 ---
 
+## [Gallery Victor Armendariz, Chicago, Illinois](https://www.galleryvictor.com)
+
 ## [Perimeter Gallery, Chicago](http://perimetergallery.com/home.html)
 
 ## [Marcia Wood Gallery, Atlanta](http://marciawoodgallery.com/)
