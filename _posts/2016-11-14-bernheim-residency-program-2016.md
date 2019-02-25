@@ -32,5 +32,5 @@ Bernheim Residency Artists work within the forest and/or arboretum to create wor
 
 <a class="type-link" target="_blank" href="{{ site.baseurl }}/assets/images/news/design-school-confidential-spread.jpg">Design School Confidential: <br>Extraordinary Class Projects from International Design Schools</a>
 
-<span class="type-italic">[Published Advanced Design Class Projects]</span><br>
+<span class="type-italic">[published Advanced Design class projects]</span><br>
 <span class="type-light">by Steven Heller, Lita Talarico, Rockport Publishers</span>
