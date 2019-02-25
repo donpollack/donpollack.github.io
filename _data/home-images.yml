@@ -45,3 +45,35 @@
   link: assets/documents/true-life-novelettes.pdf
   border: true
 
+
+- image: 15.jpg
+  link: assets/images/home-images/full-size/15.jpg
+
+- image: 14.jpg
+  link: assets/images/home-images/full-size/14.jpg
+
+- image: 13.jpg
+  link: assets/images/home-images/full-size/13.jpg
+
+- image: 12.jpg
+  link: assets/images/home-images/full-size/12.jpg
+
+- image: 11.jpg
+
+- image: 10.jpg
+
+- image: 07.jpg
+  link: assets/documents/this-land-is-not-empty.pdf
+
+- image: 06.jpg
+  heading: "Carnegie Museum of Art & Science<br>New Albany, Indiana"
+
+- image: 05.jpg
+
+- image: 04.jpg
+
+- image: 03.jpg
+
+- image: 02.jpg
+
+- image: 01.jpg
