@@ -81,12 +81,12 @@
   image: 08.jpg
   link: assets/documents/true-life-novelettes.pdf
   border: true
-  heading: "Catalog"
+  heading: "Exhibition Catalog"
 
 
 - image: 07.jpg
   link: assets/documents/this-land-is-not-empty.pdf
-  heading: "Catalog"
+  heading: "Exhibition Catalog"
 
 - image: 06.jpg
   heading: "Carnegie Museum of Art & Science<br>New Albany, Indiana"
