@@ -1,0 +1,17 @@
+<div class="home-images__item">
+    <a class="home-images__link"
+       target="_blank"
+       href="{% if include.link %}{{ include.link }}
+       {% else %}{{ site.baseurl }}/assets/images/home/full-size/{{ include.image }}
+       {% endif %}">
+        <div class="home-images__image{% if include.border %} image-border{% endif %}">
+            <img class="image" alt="{{ include.title }}" src="{{ site.baseurl }}/assets/images/home/thumbnails/{{ include.image }}"/>
+        </div>
+    </a>
+    {% if include.caption %}
+        <div class="home-images__caption">
+            <span class="home-images__material">{{ include.material }}</span>
+            <span class="home-images__size">{{ include.size }}</span>
+        </div>
+    {% endif; %}
+</div>

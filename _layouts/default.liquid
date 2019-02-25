@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="{{ site.baseurl }}/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        {% include header.liquid %}
+        {% include navigation.liquid %}
+        <main class="site-body">
+            <div class="site-body__interior">
+                {{ content }}
+            </div>
+        </main>
+    </body>
+</html>

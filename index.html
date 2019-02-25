@@ -1,0 +1,17 @@
+---
+title: Don Pollack
+---
+<h2 class="section-heading section-heading--indented type-heading">Recent Work</h2>
+<div class="home-images">
+    {% for item in site.data.home-images %}
+        {% include home-image-block.liquid
+        title=item.title
+        image=item.image
+        link=item.link
+        caption=item.caption
+        material=item.material
+        size=item.size
+        border=item.border
+        %}
+    {% endfor %}
+</div>

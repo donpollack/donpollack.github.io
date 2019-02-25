@@ -1,0 +1,12 @@
+<nav class="navigation">
+    <ul class="navigation__items">
+        {% for item in site.data.navigation %}
+            <li class="navigation__item">
+                <a href="{{ item.link }}"
+                  class="navigation__link type-heading{% if page.url == item.link %} current{% endif %}"
+                  {% if item.new-tab %}target="_blank"{% endif %}
+                >{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

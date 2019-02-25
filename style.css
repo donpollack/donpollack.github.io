@@ -1,0 +1,262 @@
+/**
+ * Fix fonts that render as bold in Firefox
+ *
+ * Put this near the top of your style.css
+ * Before any overriding styles
+ */
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+/**
+ * Firefox specific rule
+ */
+
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+  }
+}
+
+/******************************************************************************/
+
+/* FONT IMPORTS */
+
+@font-face {
+  font-family: 'din';
+  src: url(assets/fonts/din.ttf); 
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(assets/fonts/roboto.ttf); 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 400 12px/1.5 'roboto', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  margin: 0;
+}
+
+/* HEADER */
+
+.site-header {
+  padding: 112px 15px 60px 15px;
+  border-bottom: 1px solid #adadad;
+}
+
+.site-header__link {
+  text-decoration: none;
+}
+
+.site-header__title {
+  margin: 0;
+}
+@media screen and (min-width: 940px) {
+  .site-header__title {
+    margin-left: 132px;
+  }
+}
+
+/* NAVIGATION */
+
+.navigation {
+  padding: 15px 15px 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navigation__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 940px) {
+  .navigation__items {
+    margin-left: 19px;
+  }
+}
+
+.navigation__item {
+  display: inline-block;
+  margin-right: 53px;
+  margin-bottom: 11px;
+}
+.navigation__items li:last-child {
+  margin-right: 0;
+}
+
+.navigation__link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  line-height: 2.8;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.navigation__link:hover {
+  background: rgba(0, 0, 0, 0.025);
+  border-color: #adadad;
+}
+.navigation__link.current {
+  border-color: #adadad;
+}
+
+/* BODY */
+
+.site-body {
+  padding: 70px 15px;
+}
+
+@media screen and (min-width: 940px) {
+  .site-body__interior {
+    margin-left: 132px;
+  }
+}
+
+/* HOME IMAGES */
+
+.home-images__item {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.home-images__image {
+  max-width: 360px;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .home-images__image {
+    max-width: 60vw;
+  }
+}
+
+.home-images__caption {
+  margin-left: 20px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -0.3em;
+}
+
+.home-images__material:after {
+  content: ', '
+}
+
+/* VITA */
+
+.vita__item {
+  margin-bottom: 60px;
+}
+
+.vita__image {
+  max-width: 360px;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .vita__image {
+    max-width: 60vw;
+  }
+}
+
+/* GALLERIES */
+
+.galleries-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.galleries-list__item {
+  margin-bottom: 12px;
+}
+.galleries-list li:last-child {
+  margin-bottom: 20px;
+}
+
+/* UTILITY */
+
+.text-article {
+  max-width: 38em;
+}
+
+.image {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.image-border {
+  border: 1px solid #e0e0e0;
+}
+
+.section-heading {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.section-heading--indented {
+  padding-left: 3.1em;
+}
+
+/* TYPOGRAPHY */
+
+.type-title {
+  font-family: 'din', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  letter-spacing: 4px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.type-heading {
+  font-size: 11px;
+  font-weight: 400;
+  color: #111; 
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  white-space: pre;
+  width: calc(100% - 0.3em);
+}
+
+.type-link {
+  color: #9c1d1e;
+}
+.type-link:hover {
+  color: #111;
+  background: rgba(0, 0, 0, 0.025);
+  transition: all 0.2s ease;
+}
+.type-link--underline {
+  line-height: 2.8;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  font-size: 13px;
+}
+.type-link--underline:hover {
+  border-bottom-color: #adadad;
+}
+
+.text-article hr {
+  height: 1px;
+  border: none;
+  background: #e0e0e0;
+  margin: 30px 0;
+}
