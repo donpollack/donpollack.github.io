@@ -41,5 +41,5 @@ Bernheim Residency Artists work within the forest and/or arboretum to create wor
     <img src="{{ site.baseurl }}/assets/images/news/star.jpg" alt="Design School Confidential" width="100">
 </a>
 
-<a class="type-link" target="_blank" href="https://thelincolnacademyofillinois.org/">Order of Lincoln, <span class="type-italic">Bicentennial Edition</span>, Lincoln Academy of Illinois, State of Illinois</a>
+<a class="type-link" target="_blank" href="https://thelincolnacademyofillinois.org/">Order of Lincoln, <span class="type-italic">Bicentennial Edition</span>, Lincoln Academy of Illinois, <br>State of Illinois</a>
 
