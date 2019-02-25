@@ -14,11 +14,11 @@ Bernheim Residency Artists work within the forest and/or arboretum to create wor
 
 ---
 
-<a target="_blank" href="http://www.saic.edu/faculty/residenciesandgrants/facultyenrichmentgrants/">
+<a target="_blank" href="http://www.saic.edu/faculty/grants/faculty-enrichment-grants">
     <img src="{{ site.baseurl }}/assets/images/news/saic.png" alt="SAIC" width="100">
 </a>
 
-<a class="type-link" target="_blank" href="http://www.saic.edu/faculty/residenciesandgrants/facultyenrichmentgrants/">
+<a class="type-link" target="_blank" href="http://www.saic.edu/faculty/grants/faculty-enrichment-grants">
     School of the Art Institute Faculty Enrichment Grant 2016
     <br>
     School of the Art Institute Faculty Enrichment Grant 2017
@@ -34,3 +34,12 @@ Bernheim Residency Artists work within the forest and/or arboretum to create wor
 
 <span class="type-italic">[published Advanced Design class projects]</span><br>
 <span class="type-light">by Steven Heller, Lita Talarico, Rockport Publishers</span>
+
+---
+
+<a target="_blank" href="https://thelincolnacademyofillinois.org/">
+    <img src="{{ site.baseurl }}/assets/images/news/star.jpg" alt="Design School Confidential" width="100">
+</a>
+
+<a class="type-link" target="_blank" href="https://thelincolnacademyofillinois.org/">Order of Lincoln, <span class="type-italic">Bicentennial Edition</span>, Lincoln Academy of Illinois, State of Illinois</a>
+
