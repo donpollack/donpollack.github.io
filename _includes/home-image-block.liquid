@@ -17,4 +17,7 @@
             <span class="home-images__size">{{ include.size }}</span>
         </div>
     {% endif; %}
+    {% if include.slideshow %}
+        {% include home-slideshow-block.liquid %}
+    {% endif %}
 </div>

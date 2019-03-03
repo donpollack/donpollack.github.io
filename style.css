@@ -143,6 +143,7 @@ body {
 .home-images__image {
   max-width: 360px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 600px) {
   .home-images__image {
@@ -162,6 +163,140 @@ body {
 .home-images__material:after {
   content: ', '
 }
+
+/* HOME IMAGE SLIDESHOWS */
+
+.home-slideshow {
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  margin-left: 100px;
+}
+
+.home-slideshow__images {
+  width: 100px;
+  opacity: 1;
+  flex-basis: 100%;
+  position: relative;
+}
+.home-slideshow__image-enlarger:checked ~ .home-slideshow__images {
+  width: 100%;
+  opacity: 1;
+  flex-grow: 1;
+  animation: fade-to-large 1 0.5s ease;
+}
+@keyframes fade-to-large {
+  from {
+    opacity: 1;
+    width: 100px;
+  }
+  50% {
+    opacity: 0;
+    width: 100px;
+  }
+  51% {
+    opacity: 0;
+    width: 100%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home-slideshow__image-enlarger:not(:checked) ~ .home-slideshow__images {
+  width: 100px;
+  opacity: 1;
+  animation: fade-to-small 1 0.5s ease;
+}
+@keyframes fade-to-small {
+  from {
+    opacity: 1;
+    width: 100%;
+  }
+  50% {
+    opacity: 0;
+    width: 100%;
+  }
+  51% {
+    opacity: 0;
+    width: 100px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-slideshow__image-enlarger + label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home-slideshow__image-enlarger:checked ~ .home-slideshow__images .home-slideshow__image {
+  max-height: 100%;
+}
+
+.home-slideshow__image {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  pointer-events: none;
+  justify-content: flex-start;
+  transition: opacity 0.3s ease;
+}
+.home-slideshow__image-switcher:checked + .home-slideshow__image,
+.home-slideshow__image--current {
+  opacity: 1;
+  /* position: relative */
+}
+.home-slideshow__image img {
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;
+  object-fit: contain;
+  object-position: 0 0;
+  flex-basis: 100%;
+}
+.home-slideshow__image-switcher:checked + .home-slideshow__image img,
+.home-slideshow__image--current img {
+  /* flex-basis: 100%; */
+}
+
+.hidden-input {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.home-slideshow__buttons {
+  position: relative;
+  z-index: 1;
+}
+
+.home-slideshow__button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-slideshow__button--current {
+  border: 1px solid black;
+}
+
+/* ---------------------- */
 
 /* VITA */
 

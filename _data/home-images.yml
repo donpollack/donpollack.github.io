@@ -82,14 +82,34 @@
   link: assets/documents/true-life-novelettes.pdf
   border: true
   heading: "Exhibition Catalog"
+  slideshow:
+    name: novelettes
+    images:
+        - image: novelettes-1.jpg
+        - image: novelettes-3.jpg
 
 
 - image: 07.jpg
   link: assets/documents/this-land-is-not-empty.pdf
   heading: "Exhibition Catalog"
+  slideshow:
+    name: bridgeport
+    images:
+        - image: bridgeport-1.jpg
+        - image: bridgeport-2.jpg
+        - image: bridgeport-3.jpg
+        - image: bridgeport-4.jpg
+        - image: bridgeport-5.jpg
+        - image: bridgeport-6.jpg
+        - image: bridgeport-7.jpg
+        - image: bridgeport-8.jpg
 
 - image: 06.jpg
   heading: "Carnegie Museum of Art & Science<br>New Albany, Indiana"
+  slideshow:
+    name: bernheim
+    images:
+      - image: bernheim-1.jpg
 
 - image: 05.jpg
 
