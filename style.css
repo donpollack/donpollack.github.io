@@ -258,7 +258,6 @@ body {
   width: 100%;
   max-height: 100%;
   z-index: -1;
-  display: flex;
   pointer-events: none;
   justify-content: flex-start;
   animation: image-fade-out 1 0.6s ease-in-out;
@@ -271,6 +270,7 @@ body {
 @media screen and (min-width: 940px) {
   .home-slideshow__image {
     animation: none;
+    display: flex;
     transition: opacity 0.4s ease-in-out;
   }
   .home-slideshow__image-switcher:checked + .home-slideshow__image {
@@ -283,11 +283,11 @@ body {
     opacity: 1;
     position: relative;
   }
-  50% {
+  45% {
     opacity: 0;
     position: relative;
   }
-  51% {
+  55% {
     position: absolute;
   }
   to {
@@ -300,15 +300,16 @@ body {
     opacity: 0;
     position: absolute;
   }
-  50% {
+  45% {
     position: absolute;
   }
-  51% {
+  55% {
     opacity: 0;
     position: relative;
   }
   to {
     opacity: 1;
+    position: relative;
   }
 }
 
