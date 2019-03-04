@@ -114,11 +114,21 @@
       - image: bernheim-2.jpg
 
 - image: 05.jpg
+  material: oil on canvas
+  size: "48” × 48”"
 
 - image: 04.jpg
+  material: oil on canvas
+  size: "48” × 48”"
 
 - image: 03.jpg
+  material: oil on canvas
+  size: "48” × 48”"
 
 - image: 02.jpg
+  material: oil on canvas
+  size: "48” × 48”"
 
 - image: 01.jpg
+  material: oil on canvas
+  size: "48” × 48”"
