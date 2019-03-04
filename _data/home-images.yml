@@ -86,6 +86,7 @@
     name: novelettes
     images:
         - image: novelettes-1.jpg
+        - image: novelettes-2.jpg
         - image: novelettes-3.jpg
 
 
@@ -110,6 +111,7 @@
     name: bernheim
     images:
       - image: bernheim-1.jpg
+      - image: bernheim-2.jpg
 
 - image: 05.jpg
 
