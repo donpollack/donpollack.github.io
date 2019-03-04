@@ -136,14 +136,24 @@ body {
 
 .home-images__item {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 940px) {
+  .home-images__item {
+    flex-direction: row;
+  }
+}
+
+.home-images__item-main {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
 }
 
 .home-images__image {
   max-width: 360px;
   overflow: hidden;
-  flex-shrink: 0;
 }
 @media screen and (max-width: 600px) {
   .home-images__image {
@@ -170,33 +180,40 @@ body {
   align-self: stretch;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
-  margin-left: 100px;
+}
+@media screen and (min-width: 940px) {
+  .home-slideshow {
+    flex-direction: column;
+    margin-left: 100px;
+  }
 }
 
 .home-slideshow__images {
-  width: 100px;
   opacity: 1;
+  width: 150px;
   flex-basis: 100%;
   position: relative;
+  /* transition: width 0.4s ease-in-out; */
+  animation: fade-to-small 1 0.5s ease;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .home-slideshow__image-enlarger:checked ~ .home-slideshow__images {
   width: 100%;
-  opacity: 1;
-  flex-grow: 1;
   animation: fade-to-large 1 0.5s ease;
 }
 @keyframes fade-to-large {
   from {
     opacity: 1;
-    width: 100px;
+    width: 150px;
   }
   50% {
     opacity: 0;
-    width: 100px;
+    width: 150px;
   }
   51% {
     opacity: 0;
@@ -205,11 +222,6 @@ body {
   to {
     opacity: 1;
   }
-}
-.home-slideshow__image-enlarger:not(:checked) ~ .home-slideshow__images {
-  width: 100px;
-  opacity: 1;
-  animation: fade-to-small 1 0.5s ease;
 }
 @keyframes fade-to-small {
   from {
@@ -222,7 +234,7 @@ body {
   }
   51% {
     opacity: 0;
-    width: 100px;
+    width: 150px;
   }
   to {
     opacity: 1;
@@ -238,27 +250,68 @@ body {
   z-index: 1;
 }
 
-.home-slideshow__image-enlarger:checked ~ .home-slideshow__images .home-slideshow__image {
-  max-height: 100%;
-}
-
 .home-slideshow__image {
   opacity: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  max-height: 100%;
   z-index: -1;
   display: flex;
   pointer-events: none;
   justify-content: flex-start;
-  transition: opacity 0.3s ease;
+  animation: image-fade-out 1 0.6s ease-in-out;
 }
-.home-slideshow__image-switcher:checked + .home-slideshow__image,
-.home-slideshow__image--current {
+.home-slideshow__image-switcher:checked + .home-slideshow__image {
+  position: relative;
   opacity: 1;
-  /* position: relative */
+  animation: image-fade-in 1 0.6s ease-in-out;
 }
+@media screen and (min-width: 940px) {
+  .home-slideshow__image {
+    animation: none;
+    transition: opacity 0.4s ease-in-out;
+  }
+  .home-slideshow__image-switcher:checked + .home-slideshow__image {
+    position: absolute;
+    animation: none;
+  }
+}
+@keyframes image-fade-out {
+  from {
+    opacity: 1;
+    position: relative;
+  }
+  50% {
+    opacity: 0;
+    position: relative;
+  }
+  51% {
+    position: absolute;
+  }
+  to {
+    opacity: 0;
+    position: absolute;
+  }
+}
+@keyframes image-fade-in {
+  from {
+    opacity: 0;
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+  }
+  51% {
+    opacity: 0;
+    position: relative;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .home-slideshow__image img {
   -webkit-user-select: none; /* Chrome/Safari */        
   -moz-user-select: none; /* Firefox */
@@ -266,10 +319,6 @@ body {
   object-fit: contain;
   object-position: 0 0;
   flex-basis: 100%;
-}
-.home-slideshow__image-switcher:checked + .home-slideshow__image img,
-.home-slideshow__image--current img {
-  /* flex-basis: 100%; */
 }
 
 .hidden-input {
@@ -282,17 +331,31 @@ body {
 .home-slideshow__buttons {
   position: relative;
   z-index: 1;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 940px) {
+  .home-slideshow__buttons {
+    margin-bottom: 0px;
+  }
 }
 
 .home-slideshow__button {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  margin: 8px 8px 0 0;
 }
 
 .home-slideshow__button--current {
+  background: #444444;
+  color: #fff;
   border: 1px solid black;
 }
 
