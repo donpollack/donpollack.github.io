@@ -317,7 +317,7 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none;
   object-fit: contain;
-  object-position: 0 0;
+  object-position: 0 100%;
   flex-basis: 100%;
 }
 
