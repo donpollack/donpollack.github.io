@@ -114,21 +114,26 @@
       - image: bernheim-2.jpg
 
 - image: 05.jpg
+  caption: true
   material: oil on canvas
   size: "48” × 48”"
 
 - image: 04.jpg
+  caption: true
   material: oil on canvas
   size: "48” × 48”"
 
 - image: 03.jpg
+  caption: true
   material: oil on canvas
   size: "48” × 48”"
 
 - image: 02.jpg
+  caption: true
   material: oil on canvas
   size: "48” × 48”"
 
 - image: 01.jpg
+  caption: true
   material: oil on canvas
   size: "48” × 48”"
