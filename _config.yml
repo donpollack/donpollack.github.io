@@ -8,12 +8,12 @@ defaults:
       layout: default
 
   - scope:
-      path: assets/images/*
+      path: /assets/images
     values:
       image: true
 
   - scope:
-      path: assets/images/home/thumbnails
+      path: /assets/images/home/thumbnails
     values:
       image: true
       home-thumbnail: true
