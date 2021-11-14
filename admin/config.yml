@@ -48,17 +48,25 @@ collections:
         name: "home-images"
         file: "_data/home-images.yml"
         fields:
-          - {label: "Title", name: "title", widget: string}
-          - {label: "Image File", name: "image", widget: string}
-          - {label: "Caption", name: "caption", widget: string}
-          - {label: "Material", name: "material", widget: string}
-          - {label: "Size", name: "size", widget: string}
+          - label: "Images"
+            name: "images-test"
+            widget: list
+            fields:
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Image File", name: "image", widget: string}
+              - {label: "Caption", name: "caption", widget: string}
+              - {label: "Material", name: "material", widget: string}
+              - {label: "Size", name: "size", widget: string}
       - label: "Home Images (Test 2)"
         name: "home-images-2"
         file: "home-images.yml"
         fields:
-          - {label: "Title", name: "title", widget: string}
-          - {label: "Image File", name: "image", widget: string}
-          - {label: "Caption", name: "caption", widget: string}
-          - {label: "Material", name: "material", widget: string}
-          - {label: "Size", name: "size", widget: string}
+          - label: "Images"
+            name: "images-test"
+            widget: list
+            fields:
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Image File", name: "image", widget: string}
+              - {label: "Caption", name: "caption", widget: string}
+              - {label: "Material", name: "material", widget: string}
+              - {label: "Size", name: "size", widget: string}
