@@ -1,142 +1,143 @@
-- title: "Crime And Punishment"
-  image: crime-and-punishment.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+items:
+  - title: "Crime And Punishment"
+    image: crime-and-punishment.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
 
-- image: 15.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+  - image: 15.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
 
-- image: 14.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+  - image: 14.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
 
-- image: 13.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+  - image: 13.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
-- image: no-place-for-hate.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+  - image: no-place-for-hate.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
-- image: 11.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+  - image: 11.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
-- image: 10.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
-
-
-- title: "Silent Running"
-  image: silent-running.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 72”"
+  - image: 10.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
 
-- title: "I'm witnessing a forest fire"
-  image: im-witnessing-a-forest-fire.jpg
-  caption: true
-  material: oil on canvas
-  size: "20” × 30”"
+  - title: "Silent Running"
+    image: silent-running.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 72”"
 
 
-- title: "I would love you, if you weren't so beautiful"
-  image: i-would-love-you-if-you-werent-so-beautiful.jpg
-  caption: true
-  material: oil on canvas
-  size: "20” × 30”"
-  
-
-- title: "You never know what you got 'till it's gone"
-  image: you-never-know-what-you-got-till-its-gone.jpg
-  caption: true
-  material: oil on canvas
-  size: "20” × 30”"
+  - title: "I'm witnessing a forest fire"
+    image: im-witnessing-a-forest-fire.jpg
+    caption: true
+    material: oil on canvas
+    size: "20” × 30”"
 
 
-- title: "1984"
-  image: nineteen-eighty-four.jpg
-  caption: true
-  material: oil on canvas
-  size: "20” × 30”"
+  - title: "I would love you, if you weren't so beautiful"
+    image: i-would-love-you-if-you-werent-so-beautiful.jpg
+    caption: true
+    material: oil on canvas
+    size: "20” × 30”"
 
 
-- title: "Calculus of a Single Variable"
-  image: calculus.jpg
-  caption: true
-  material: oil on canvas
-  size: "20” × 30”"
+  - title: "You never know what you got 'till it's gone"
+    image: you-never-know-what-you-got-till-its-gone.jpg
+    caption: true
+    material: oil on canvas
+    size: "20” × 30”"
 
 
-- title: "True Life Novelettes"
-  image: 08.jpg
-  link: assets/documents/true-life-novelettes.pdf
-  border: true
-  heading: "Exhibition Catalog"
-  slideshow:
-    name: novelettes
-    images:
-        - image: novelettes-1.jpg
-        - image: novelettes-2.jpg
-        - image: novelettes-3.jpg
+  - title: "1984"
+    image: nineteen-eighty-four.jpg
+    caption: true
+    material: oil on canvas
+    size: "20” × 30”"
 
 
-- image: 07.jpg
-  link: assets/documents/this-land-is-not-empty.pdf
-  heading: "Exhibition Catalog"
-  slideshow:
-    name: bridgeport
-    images:
-        - image: bridgeport-1.jpg
-        - image: bridgeport-2.jpg
-        - image: bridgeport-3.jpg
-        - image: bridgeport-4.jpg
-        - image: bridgeport-5.jpg
-        - image: bridgeport-6.jpg
-        - image: bridgeport-7.jpg
-        - image: bridgeport-8.jpg
+  - title: "Calculus of a Single Variable"
+    image: calculus.jpg
+    caption: true
+    material: oil on canvas
+    size: "20” × 30”"
 
-- image: 06.jpg
-  heading: "Carnegie Museum of Art & Science<br>New Albany, Indiana"
-  slideshow:
-    name: bernheim
-    images:
-      - image: bernheim-1.jpg
-      - image: bernheim-2.jpg
 
-- image: 05.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 48”"
+  - title: "True Life Novelettes"
+    image: 08.jpg
+    link: assets/documents/true-life-novelettes.pdf
+    border: true
+    heading: "Exhibition Catalog"
+    slideshow:
+      name: novelettes
+      images:
+          - image: novelettes-1.jpg
+          - image: novelettes-2.jpg
+          - image: novelettes-3.jpg
 
-- image: 04.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 48”"
 
-- image: 03.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 48”"
+  - image: 07.jpg
+    link: assets/documents/this-land-is-not-empty.pdf
+    heading: "Exhibition Catalog"
+    slideshow:
+      name: bridgeport
+      images:
+          - image: bridgeport-1.jpg
+          - image: bridgeport-2.jpg
+          - image: bridgeport-3.jpg
+          - image: bridgeport-4.jpg
+          - image: bridgeport-5.jpg
+          - image: bridgeport-6.jpg
+          - image: bridgeport-7.jpg
+          - image: bridgeport-8.jpg
 
-- image: 02.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 48”"
+  - image: 06.jpg
+    heading: "Carnegie Museum of Art & Science<br>New Albany, Indiana"
+    slideshow:
+      name: bernheim
+      images:
+        - image: bernheim-1.jpg
+        - image: bernheim-2.jpg
 
-- image: 01.jpg
-  caption: true
-  material: oil on canvas
-  size: "48” × 48”"
+  - image: 05.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 48”"
+
+  - image: 04.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 48”"
+
+  - image: 03.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 48”"
+
+  - image: 02.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 48”"
+
+  - image: 01.jpg
+    caption: true
+    material: oil on canvas
+    size: "48” × 48”"

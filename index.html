@@ -3,7 +3,7 @@ title: Don Pollack
 ---
 <h2 class="section-heading type-heading">Recent Work</h2>
 <div class="home-images">
-    {% for item in site.data.home-images %}
+    {% for item in site.data.home-images.items %}
         {% include home-image-block.liquid
         title=item.title
         image=item.image
