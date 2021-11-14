@@ -1,6 +1,6 @@
 <nav class="navigation">
     <ul class="navigation__items">
-        {% for item in site.data.navigation %}
+        {% for item in site.data.navigation.items %}
             <li class="navigation__item">
                 <a href="{{ item.link }}"
                   class="navigation__link type-heading{% if page.url == item.link %} current{% endif %}"

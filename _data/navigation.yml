@@ -1,19 +1,20 @@
-- name: Crossing The Great Divide
-  link: http://www.crossingthegreatdivide.net/
-  new-tab: true
+items:
+  - name: Crossing The Great Divide
+    link: http://www.crossingthegreatdivide.net/
+    new-tab: true
 
-- name: Museum
-  link: http://www.donpollack.com/museum
-  new-tab: true
+  - name: Museum
+    link: http://www.donpollack.com/museum
+    new-tab: true
 
-- name: Contact
-  link: mailto:pollackdna@comcast.net
+  - name: Contact
+    link: mailto:pollackdna@comcast.net
 
-- name: Vita
-  link: /vita/
+  - name: Vita
+    link: /vita/
 
-- name: Galleries
-  link: /galleries/
+  - name: Galleries
+    link: /galleries/
 
-- name: News
-  link: /news/
+  - name: News
+    link: /news/

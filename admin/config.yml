@@ -6,7 +6,7 @@ media_folder: "assets/images"
 
 collections:
   - name: "news"
-    label: "News"
+    label: "News and Blog"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -15,27 +15,17 @@ collections:
       - {label: "Title", name: "title", widget: string}
       - {label: "Publish Date", name: "date", widget: datetime}
       - {label: "Body", name: "body", widget: markdown}
-  - name: "pages"
-    label: "Pages"
+
+  - name: "data"
+    label: "Site Data"
     files:
-      - label: "Home"
+      - label: "Home Page Data"
         name: "home"
         file: "index.html"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: string
-          - label: "Images"
-            name: "items"
-            file: "_data/home-images.yml"
-            widget: list
-            fields:
-              - {label: "Title", name: "title", widget: string}
-              - {label: "Image File", name: "image", widget: string}
-              - {label: "Caption", name: "caption", widget: string}
-              - {label: "Material", name: "material", widget: string}
-              - {label: "Size", name: "size", widget: string}
-      - label: "Home Images (Test)"
+          - {label: "Title", name: "title", widget: string}
+
+      - label: "Home Page Images"
         name: "home-images"
         file: "_data/home-images.yml"
         fields:
@@ -48,16 +38,36 @@ collections:
               - {label: "Caption", name: "caption", widget: string}
               - {label: "Material", name: "material", widget: string}
               - {label: "Size", name: "size", widget: string}
-      - label: "Home Images (Test 2)"
-        name: "home-images-2"
-        file: "home-images.yml"
+
+      - label: "Galleries"
+        name: "galleries"
+        file: "_data/galleries.yml"
         fields:
-          - label: "Home Page Images"
+          - label: "Galleries"
             name: "items"
             widget: list
             fields:
-              - {label: "Title", name: "title", widget: string}
-              - {label: "Image File", name: "image", widget: string}
-              - {label: "Caption", name: "caption", widget: string}
-              - {label: "Material", name: "material", widget: string}
-              - {label: "Size", name: "size", widget: string}
+              - {label: "Name", name: "name", widget: string}
+              - {label: "Link", name: "link", widget: string}
+
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Navigation"
+            name: "items"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: string}
+              - {label: "Link", name: "link", widget: string}
+
+      - label: "Documents"
+        name: "documents"
+        file: "_data/documents.yml"
+        fields:
+          - label: "Navigation"
+            name: "items"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: string}
+              - {label: "Link", name: "link", widget: string}

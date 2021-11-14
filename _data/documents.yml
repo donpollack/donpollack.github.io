@@ -1,0 +1,9 @@
+items:
+  - title: Vita
+    image: vita.png
+    link: assets/documents/vita.pdf
+
+
+  - title: Artist Statement
+    image: artist-statement.png
+    link: assets/documents/artist-statement.pdf

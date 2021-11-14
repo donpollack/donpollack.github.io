@@ -1,6 +1,6 @@
 <h2 class="section-heading type-heading">{{ page.title }}</h2>
 <ul class="galleries-list">
-    {% for item in site.data.galleries %}
+    {% for item in site.data.galleries.items %}
         <li class="galleries-list__item">
             <a class="type-link type-link--underline galleries-list__link" href="{{ item.link }}">{{ item.name }}</a>
         </li>
