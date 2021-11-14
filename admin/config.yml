@@ -26,7 +26,7 @@ collections:
             name: "title"
             widget: string
           - label: "Images"
-            name: "images"
+            name: "items"
             file: "_data/home-images.yml"
             widget: list
             fields:
@@ -36,7 +36,7 @@ collections:
               - {label: "Material", name: "material", widget: string}
               - {label: "Size", name: "size", widget: string}
           - label: "Images (Test)"
-            name: "images-test"
+            name: "items"
             file: "home-images.yml"
             widget: list
             fields:
