@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "assets/images/uploads"
+media_folder: "assets/images"
 
 collections:
   - name: "news"
@@ -10,7 +10,23 @@ collections:
     folder: "_posts"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "text"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", default: "text", widget: hidden}
+      - {label: "Title", name: "title", widget: string}
+      - {label: "Publish Date", name: "date", widget: datetime}
+      - {label: "Body", name: "body", widget: markdown}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "inded"
+        file: "index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: string
+          - label: "Images"
+            name: "images"
+            file: "_data/home-images.yml"
+            fields:
+              - {label: "Title", name: "title", widget: text}
+              - {label: "Image File", name: "image", widget: text}
