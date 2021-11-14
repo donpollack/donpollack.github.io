@@ -18,7 +18,7 @@ collections:
     label: "Pages"
     files:
       - label: "Home"
-        name: "inded"
+        name: "home"
         file: "index.html"
         fields:
           - label: "Title"
@@ -29,5 +29,36 @@ collections:
             file: "_data/home-images.yml"
             widget: list
             fields:
-              - {label: "Title", name: "title", widget: text}
-              - {label: "Image File", name: "image", widget: text}
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Image File", name: "image", widget: string}
+              - {label: "Caption", name: "caption", widget: string}
+              - {label: "Material", name: "material", widget: string}
+              - {label: "Size", name: "size", widget: string}
+          - label: "Images (Test)"
+            name: "images-test"
+            file: "home-images.yml"
+            widget: list
+            fields:
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Image File", name: "image", widget: string}
+              - {label: "Caption", name: "caption", widget: string}
+              - {label: "Material", name: "material", widget: string}
+              - {label: "Size", name: "size", widget: string}
+      - label: "Home Images (Test)"
+        name: "home-images"
+        file: "_data/home-images.yml"
+        fields:
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Image File", name: "image", widget: string}
+          - {label: "Caption", name: "caption", widget: string}
+          - {label: "Material", name: "material", widget: string}
+          - {label: "Size", name: "size", widget: string}
+      - label: "Home Images (Test 2)"
+        name: "home-images-2"
+        file: "home-images.yml"
+        fields:
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Image File", name: "image", widget: string}
+          - {label: "Caption", name: "caption", widget: string}
+          - {label: "Material", name: "material", widget: string}
+          - {label: "Size", name: "size", widget: string}
