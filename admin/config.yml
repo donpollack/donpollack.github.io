@@ -35,16 +35,6 @@ collections:
               - {label: "Caption", name: "caption", widget: string}
               - {label: "Material", name: "material", widget: string}
               - {label: "Size", name: "size", widget: string}
-          - label: "Images (Test)"
-            name: "items"
-            file: "home-images.yml"
-            widget: list
-            fields:
-              - {label: "Title", name: "title", widget: string}
-              - {label: "Image File", name: "image", widget: string}
-              - {label: "Caption", name: "caption", widget: string}
-              - {label: "Material", name: "material", widget: string}
-              - {label: "Size", name: "size", widget: string}
       - label: "Home Images (Test)"
         name: "home-images"
         file: "_data/home-images.yml"
