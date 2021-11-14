@@ -65,9 +65,10 @@ collections:
         name: "documents"
         file: "_data/documents.yml"
         fields:
-          - label: "Navigation"
+          - label: "Documents"
             name: "items"
             widget: list
             fields:
-              - {label: "Name", name: "name", widget: string}
-              - {label: "Link", name: "link", widget: string}
+              - {label: "Title", name: "title", widget: string}
+              - {label: "Document Thumbnail", name: "image", widget: string}
+              - {label: "Document File", name: "link", widget: string}
