@@ -9,7 +9,6 @@ collections:
     label: "News"
     folder: "_posts"
     create: true
-    slug: {{year}}-{{month}}-{{day}}-{{slug}}
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "text"}
       - {label: "Title", name: "title", widget: "string"}
