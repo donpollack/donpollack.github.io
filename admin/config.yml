@@ -27,6 +27,7 @@ collections:
           - label: "Images"
             name: "images"
             file: "_data/home-images.yml"
+            widget: list
             fields:
               - {label: "Title", name: "title", widget: text}
               - {label: "Image File", name: "image", widget: text}
