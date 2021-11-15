@@ -1,5 +1,5 @@
 title: Don Pollack
-baseurl: ""
+baseurl: "https://donpollack.netlify.app"
 
 defaults:
   - scope:
