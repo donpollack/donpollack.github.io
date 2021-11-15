@@ -84,4 +84,4 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: string}
               - {label: "Document Thumbnail", name: "image", widget: string}
-              - {label: "Document", name: "document", media_folder: "static/pdfs", widget: file}
+              - {label: "Document", name: "document", widget: file}
