@@ -1,21 +1,21 @@
 <div class="home-slideshow" data-slideshow="{{ include.slideshow.name }}">
-    <input class="hidden-input home-slideshow__image-enlarger" name="" id="{{ include.slideshow.name }}-container" type="checkbox" value=""/>
-    <label for="{{ include.slideshow.name }}-container"></label>
-    <div class="home-slideshow__images">
-        {% for item in include.slideshow.images %}
-            <input class="hidden-input home-slideshow__image-switcher" id="{{ include.slideshow.name }}-{{ forloop.index }}" name="{{ include.slideshow.name }}" type="radio" value="" {% if forloop.first == true %}checked{% endif %} data-index="{{ forloop.index }}" />
-            <div class="home-slideshow__image">
-                <img class="image" alt="{{ item.image }}" src="{{ site.baseurl }}/assets/images/slideshow/{{ include.slideshow.name }}/thumbnails/{{ item.image }}" data-image="{{ item.image }}" />
-            </div>
-        {% endfor %}
-    </div>
-    <div class="home-slideshow__buttons">
-        {% for item in include.slideshow.images %}
-            {% if forloop.length > 1 %}
-                <label name="{{ include.slideshow.name }}" class="home-slideshow__button" for="{{ include.slideshow.name }}-{{ forloop.index }}">
-                    {{ forloop.index }}
-                </label>
-            {% endif %}
-        {% endfor %}
-    </div>
+  <input class="hidden-input home-slideshow__image-enlarger" name="" id="{{ include.slideshow.name }}-container" type="checkbox" value=""/>
+  <label for="{{ include.slideshow.name }}-container"></label>
+  <div class="home-slideshow__images">
+    {% for item in include.slideshow.images %}
+      <input class="hidden-input home-slideshow__image-switcher" id="{{ include.slideshow.name }}-{{ forloop.index }}" name="{{ include.slideshow.name }}" type="radio" value="" {% if forloop.first == true %}checked{% endif %} data-index="{{ forloop.index }}" />
+      <div class="home-slideshow__image">
+        <img class="image" alt="{{ item.image }}" src="{{ site.baseurl }}/static/uploads/{{ item.image }}?nf_resize=fit&w=700" data-image="{{ item.image }}" />
+      </div>
+    {% endfor %}
+  </div>
+  <div class="home-slideshow__buttons">
+    {% for item in include.slideshow.images %}
+      {% if forloop.length > 1 %}
+        <label name="{{ include.slideshow.name }}" class="home-slideshow__button" for="{{ include.slideshow.name }}-{{ forloop.index }}">
+          {{ forloop.index }}
+        </label>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
