@@ -6,10 +6,10 @@
     <a class="home-images__link"
        target="_blank"
        href="{% if include.link %}{{ site.baseurl }}{{ include.link }}
-       {% else %}{{ site.baseurl }}/assets/{{ include.image }}
+       {% else %}{{ site.baseurl }}/static/uploads/{{ include.image }}
        {% endif %}">
       <div class="home-images__image{% if include.border %} image-border{% endif %}">
-        <img class="image" alt="{{ include.title }}" src="{{ site.baseurl }}/assets/{{ include.image }}?nf_resize=fit&w=700" />
+        <img class="image" alt="{{ include.title }}" src="{{ site.baseurl }}/static/uploads/{{ include.image }}?nf_resize=fit&w=700" />
       </div>
     </a>
     {% if include.caption %}

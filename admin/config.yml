@@ -4,7 +4,6 @@ backend:
 
 site_url: "https://www.donpollack.com"
 media_folder: "static/uploads"
-public_folder: "assets/"
 
 collections:
   - name: "news"
