@@ -73,4 +73,4 @@ collections:
               - {label: "Title", name: "title", widget: string}
               - {label: "Document Thumbnail", name: "image", widget: string}
               - {label: "Document Old", name: "link", widget: string}
-              - {label: "Document", name: "link", widget: string}
+              - {label: "Document", name: "document", media_folder: "static/pdfs", widget: file}
