@@ -34,7 +34,8 @@ collections:
             widget: list
             fields:
               - {label: "Title", name: "title", widget: string}
-              - {label: "Image File", name: "image", widget: string}
+              - {label: "Image Old", name: "image-old", widget: string}
+              - {label: "Image", name: "image", media_folder: "/static/images", widget: image}
               - {label: "Caption", name: "caption", widget: string}
               - {label: "Material", name: "material", widget: string}
               - {label: "Size", name: "size", widget: string}
@@ -71,4 +72,5 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: string}
               - {label: "Document Thumbnail", name: "image", widget: string}
-              - {label: "Document File", name: "link", widget: string}
+              - {label: "Document Old", name: "link", widget: string}
+              - {label: "Document", name: "link", widget: string}
