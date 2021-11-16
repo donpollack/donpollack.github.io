@@ -83,5 +83,5 @@ collections:
             widget: list
             fields:
               - {label: "Title", name: "title", widget: string}
-              - {label: "Document Thumbnail", name: "image", widget: string}
+              - {label: "Document Thumbnail", name: "image", widget: image}
               - {label: "Document", name: "document", widget: file}
