@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 
 site_url: "https://www.donpollack.com"
 media_folder: "static/uploads"
